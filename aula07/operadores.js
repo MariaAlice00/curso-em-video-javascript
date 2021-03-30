@@ -1,5 +1,5 @@
 // Fiz por fora da aula
-// Operadores aritméticos
+// Operadores aritméticos e atribuição
 
 var a = 5 + 3
 var b = a % 5
