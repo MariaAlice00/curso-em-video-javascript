@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor R$ -> US$</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script>
+        let cotacaoDolar = Number(prompt('Antes de mais nada. Quanto está a cotação do dólar agora? '))
+    </script>
+
+    <h1>Conversor R$ &rarr; US$</h1>
+
+    <button onclick="conversorMoeda()">Converter</button>
+
+    <section id="res">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+
+    <script>
+        function conversorMoeda() {
+            let valor = Number(prompt('Quantos R$ você tem na carteira? '))
+
+            let resultado = document.getElementById('res')
+
+            res.innerHTML = `
+            <h2>Seu dinheiro foi convertido!</h2>
+            <p>Cotação do dólar: ${cotacaoDolar}</p>
+            <p>Valor em real: ${valor}</p>
+            <p>Valor em dólar: ${(valor/cotacaoDolar).toFixed(2)}</p>
+            `
+        }
+    </script>
+</body>
+</html>
